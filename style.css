@@ -4,38 +4,105 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+header {
+    background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%);
+}
 
 img {
     max-width: 100%;
     object-fit: cover;
 }
 
-ul{
+ul {
     display: flex;
-    position: fixed;
+    /* position: fixed;
     
-    top: 0;
+    top: 0; */
     width: 100%;
 
     margin-top: 10px;
-    
+
     justify-content: center;
-
-
 }
 
-li{
+li {
     list-style-type: none;
     padding-left: 4%;
     padding-right: 4%;
 }
 
-a{
+a {
     font-weight: 700;
     color: white;
     text-decoration: none;
 }
 
-.space{
+.space {
     height: 1000px;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    color: white;
+    max-width: 100%;
+
+    justify-content: center;
+}
+
+.cab {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    width: 40%;
+
+
+}
+
+.header-text {
+    width: 40%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    font-size: 60px;
+
+    flex-wrap: wrap;
+
+}
+
+.animated {
+    text-indent: 8px;
+    font-weight: 700;
+}
+
+.animated:before {
+    content: "Seja bem-vindo à";
+    animation: topToBottom 5s infinite 0s;
+}
+
+@keyframes topToBottom {
+    0% {
+        content: "Seja bem-vindo à evolução!";
+    }
+
+    50% {
+        content: "Seja bem-vindo à infocardsocial!";
+    }
+
+    100% {
+        content: "Seja bem-vindo à Nova maneira!";
+    }
 }
