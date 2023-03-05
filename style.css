@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+ul{
+    display: flex;
+    position: fixed;
+    
+    top: 0;
+    width: 100%;
+
+    margin-top: 10px;
+    
+    justify-content: center;
+
+
+}
+
+li{
+    list-style-type: none;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+a{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.space{
+    height: 1000px;
+}
