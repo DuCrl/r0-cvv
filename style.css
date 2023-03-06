@@ -5,7 +5,10 @@
 }
 
 header {
-    background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%);
+    /* background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%); */
+    background-image: url(./src/bg-wave.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 img {
@@ -64,7 +67,7 @@ a {
     padding-top: 100px;
     width: 40%;
 
-
+    max-width: 100%;
 }
 
 .header-text {
@@ -76,11 +79,19 @@ a {
     align-items: center;
     text-align: center;
 
+    font-size: 3em;
 
-    font-size: 60px;
+}
 
-    flex-wrap: wrap;
+@media screen and (max-width: 900px) {
+    .header-text {
+        font-size: 2em;
+    }
 
+    header {
+        background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%);
+        
+    }
 }
 
 .animated {
@@ -104,5 +115,47 @@ a {
 
     100% {
         content: "Seja bem-vindo à Nova maneira!";
+    }
+}
+
+
+/* content */
+
+.content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 60px;
+    color: #9D1F52;
+
+}
+
+.content h2 {
+    font-size: 40px;
+    color: #9D1F52;
+
+    margin-top: 15px;
+}
+
+.content hr {
+    margin: auto;
+    margin-top: 15px;
+    max-width: 40%;
+
+    border: 2px #9D1F52 solid;
+
+}
+
+@media screen and (max-width: 900px) {
+    .content h1 {
+        font-size: 2em;
+
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+
     }
 }
