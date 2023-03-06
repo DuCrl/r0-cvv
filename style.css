@@ -16,17 +16,6 @@ img {
     object-fit: cover;
 }
 
-ul {
-    display: flex;
-    /* position: fixed;
-    
-    top: 0; */
-    width: 100%;
-
-    margin-top: 10px;
-
-    justify-content: center;
-}
 
 li {
     list-style-type: none;
@@ -34,17 +23,39 @@ li {
     padding-right: 4%;
 }
 
+
+ul {
+    display: flex;
+    /* position: fixed;
+    
+    top: 0; */
+    width: 100%;
+
+    justify-content: center;
+
+    position: fixed;
+
+    background: linear-gradient(87.16deg, rgba(3, 0, 52, 0.8) 1.98%, rgba(176, 35, 86, 0.8) 100.00%);
+    height: 30px;
+    align-items: center;
+}
+
+
+
 a {
     font-weight: 700;
     color: white;
     text-decoration: none;
 }
 
+
+
 .space {
     height: 100px;
 }
 
 .header-content {
+
     display: flex;
     flex-wrap: wrap;
 
@@ -162,6 +173,8 @@ a {
     }
 }
 
+/* PRODUTO */
+
 .product {
     display: flex;
 
@@ -206,6 +219,8 @@ a {
     font-size: 1em;
 
     border-bottom: #9D1F52 3px solid;
+    box-shadow: 2px 2px 2px 1px rgba(146, 146, 146, 0.2);
+
 
     background-color: #F6F6F6;
     height: 85px;
@@ -220,6 +235,46 @@ a {
     margin-bottom: 25px;
 
     padding: 20px;
+}
+
+.img_mob {
+    width: 0%;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .fcol {
+        width: 50%;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        margin: 15px;
+    }
+
+    .scol {
+        max-width: 0%;
+
+        display: flex;
+        text-align: center;
+    }
+
+    .tcol {
+        width: 50%;
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        padding: 15px;
+
+    }
+
+    .img_mob {
+        width: 100%;
+        display: flex;
+    }
+
 }
 
 
@@ -244,6 +299,7 @@ a {
 
     border: 2px #f3f3f3 solid;
     border-radius: 2px;
+
 }
 
 .works_itens {
@@ -273,6 +329,14 @@ a {
 
 }
 
+@media screen and (max-width: 900px) {
+    .works_prod {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
 /* BUY */
 
 .buy h1 {
@@ -292,13 +356,14 @@ a {
 
     background-color: #F6F6F6;
     border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(146, 146, 146, 0.2);
 
     color: #9D1F52;
 
     margin: 20px;
 
-    height: 300px;
-    width: 300px;
+    min-height: 300px;
+    min-width: 250px;
 
     display: flex;
     justify-content: center;
@@ -330,9 +395,11 @@ a {
     font-size: 3em;
 }
 
-button {
+.btn button {
     background: linear-gradient(91.53deg, #FA7827 7.98%, #9F244C 103.12%);
     border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(146, 146, 146, 0.2);
+
 
     height: 100px;
     width: 300px;
@@ -340,4 +407,34 @@ button {
     color: #F6F6F6;
     font-weight: 700;
     font-size: 1.5em;
+}
+
+.buy_box button {
+    background: linear-gradient(91.53deg, #FA7827 7.98%, #9F244C 103.12%);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(146, 146, 146, 0.2);
+
+
+    height: 50px;
+    width: 100px;
+
+    color: #F6F6F6;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 900px) {
+    .buy_class {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+footer{
+    background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%);
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
