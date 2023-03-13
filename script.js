@@ -1,8 +1,8 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["a evolução!", "tudo em um só lugar!", "a nova maneira!"];
-const typingDelay = 200;
+const textArray = ["A solução para juntar suas redes!", "Evolução do cartão de visita convencional!", "Tudo em um só lugar!"];
+const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between current and next text
 let textArrayIndex = 0;

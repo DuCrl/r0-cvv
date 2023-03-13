@@ -38,6 +38,8 @@ ul {
     height: 50px;
     align-items: center;
 
+    z-index: 1;
+
 }
 
 a {
@@ -54,24 +56,26 @@ a {
 .header-content {
 
     display: flex;
-    flex-wrap: wrap;
 
     color: white;
     max-width: 100%;
 
     justify-content: center;
+
 }
 
 .cab {
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
 
     height: 100vh;
 }
 
+.cab img {
+    max-width: 1000px;
+}
 
 .header-text {
     display: flex;
@@ -83,7 +87,18 @@ a {
     text-align: center;
 
     font-size: 3em;
+}
 
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#b {
+    display: none;
 }
 
 
@@ -162,25 +177,66 @@ a {
 
 @media screen and (max-width: 900px) {
 
-
     .space {
         height: 50px;
     }
 
     ul {
         display: none;
-        /* position: fixed;
-        
-        top: 0; */
-        width: 100%;
+    }
+
+    #a {
+        display: none;
+    }
+
+    .header-text{
+        font-weight: 700;
+        font-size: 2em;
+
+        text-shadow: 2px 2px 15px black;
+
+    }
+
+    .animated {
+        font-size: 1.3em;
+        font-weight: 700;
+
+    }
+
+
+    .cab {
+        display: flex;
+        flex-direction: column;
 
         justify-content: center;
-
-        position: none;
-
-        background: linear-gradient(87.16deg, rgba(3, 0, 52, 0.8) 1.98%, rgba(176, 35, 86, 0.8) 100.00%);
-        height: 30px;
         align-items: center;
+        text-align: center;
+
+        max-height: 500px;
+    }
+
+    .header-content {
+
+        background-image: url("./src/icons_banner/fundo_mobile.jpg");
+        background-size: 500px;
+        background-repeat: no-repeat;
+
+        background-position: center;
+
+        margin: auto;
+    }
+
+    header {
+        background: white;
+
+    }
+
+    .animated p span.typed-text {
+        font-weight: normal;
+        color: white;
+
+        text-shadow: 5px 5px 15px black;
+
     }
 }
 
@@ -193,14 +249,14 @@ a {
 }
 
 .content h1 {
-    font-size: 60px;
+    font-size: 40px;
     color: #9D1F52;
     font-weight: 400;
 
 }
 
 .content h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #9D1F52;
 
     margin-top: 15px;
@@ -213,7 +269,7 @@ a {
     margin-top: 15px;
     max-width: 40%;
 
-    border: 2px #9D1F52 solid;
+    border: 1px #9D1F52 solid;
 
 }
 
