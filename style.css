@@ -5,8 +5,11 @@
 }
 
 header {
-    background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%);
-
+    /* background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%); */
+    background-image: url('./src/icons_banner/bg.jpg');
+    background-size: 1800px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 img {
@@ -34,7 +37,9 @@ ul {
 
     position: fixed;
 
-    background: linear-gradient(87.16deg, rgba(3, 0, 52, 0.8) 1.98%, rgba(176, 35, 86, 0.8) 100.00%);
+    /* background: linear-gradient(87.16deg, rgba(3, 0, 52, 0.8) 1.98%, rgba(176, 35, 86, 0.8) 100.00%); */
+    background: linear-gradient(87.16deg, #00203E 1.98%, #00203E 98.66%);
+
     height: 50px;
     align-items: center;
 
@@ -60,17 +65,18 @@ a {
     color: white;
     max-width: 100%;
 
-    justify-content: center;
+    justify-content: flex-end;
 
 }
 
 .cab {
     display: flex;
-    flex-direction: column;
-
-    justify-content: flex-end;
+    flex-direction: row;
 
     height: 100vh;
+    width: 70vw;
+
+    text-shadow: 5px 5px 15px black;
 }
 
 .cab img {
@@ -185,11 +191,11 @@ a {
         display: none;
     }
 
-    #a {
+    /* #a {
         display: none;
-    }
+    } */
 
-    .header-text{
+    .header-text {
         font-weight: 700;
         font-size: 2em;
 
@@ -217,13 +223,15 @@ a {
 
     .header-content {
 
-        background-image: url("./src/icons_banner/fundo_mobile.jpg");
-        background-size: 500px;
+        background-image: url("./src/icons_banner/bgm.png");
+        background-size: 900px;
         background-repeat: no-repeat;
 
         background-position: center;
 
         margin: auto;
+
+        width: 100vw;
     }
 
     header {
@@ -240,6 +248,12 @@ a {
     }
 }
 
+ @media screen and (min-width: 1800px) {
+    header {
+        background-size: 100vw;
+    }
+}
+
 
 
 /* content */
@@ -250,14 +264,14 @@ a {
 
 .content h1 {
     font-size: 40px;
-    color: #9D1F52;
+    color: #00203E;
     font-weight: 400;
 
 }
 
 .content h2 {
     font-size: 30px;
-    color: #9D1F52;
+    color: #00203E;
 
     margin-top: 15px;
     font-weight: 400;
@@ -269,7 +283,7 @@ a {
     margin-top: 15px;
     max-width: 40%;
 
-    border: 1px #9D1F52 solid;
+    border: 1px #00203E solid;
 
 }
 
@@ -331,7 +345,7 @@ a {
 .box_prod {
     font-size: 1em;
 
-    border-bottom: #9D1F52 3px solid;
+    border-bottom: #00203E 3px solid;
     box-shadow: 2px 2px 2px 1px rgba(146, 146, 146, 0.2);
 
 
@@ -429,7 +443,9 @@ a {
 
 .works {
     /* background-image: url(./src/bg-works.svg); */
-    background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%);
+    /* background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%); */
+    background: linear-gradient(87.16deg, #00203E 1.98%, #004d91 98.66%);
+
 
 }
 
@@ -546,7 +562,7 @@ a {
 
 .buy h1 {
     font-size: 40px;
-    color: #9D1F52;
+    color: #00203E;
     font-weight: 400;
 }
 
@@ -563,7 +579,7 @@ a {
     border-radius: 15px;
     box-shadow: 2px 2px 2px 1px rgba(146, 146, 146, 0.2);
 
-    color: #9D1F52;
+    color: #00203E;
 
     margin: 20px;
 
@@ -617,6 +633,8 @@ a {
     color: #F6F6F6;
     font-weight: 700;
     font-size: 1.5em;
+
+    border: none !important;
 }
 
 .btn button:hover {
@@ -632,6 +650,7 @@ a {
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgba(146, 146, 146, 0.2);
 
+    border: none !important;
 
     height: 50px;
     width: 100px;
@@ -658,7 +677,9 @@ a {
 }
 
 footer {
-    background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%);
+    /* background: linear-gradient(87.16deg, #030034 1.98%, #B02356 53.85%, #FC9735 98.66%); */
+    background: linear-gradient(87.16deg, #00203E 1.98%, #00203E 98.66%);
+
     color: #fff;
 
     display: flex;
@@ -678,7 +699,8 @@ footer {
 
 .duvidas h4 {
     font-size: 40px;
-    color: #9D1F52;
+    color: #00203E;
+    /* color: #9D1F52; */
     font-weight: 400;
 }
 
@@ -726,7 +748,7 @@ footer {
     transition: max-height 0.5s;
     background-color: white;
 
-    color: #791a39;
+    color: #003b72;
 
     font-size: 1.5em;
 
@@ -743,4 +765,16 @@ footer {
 
 .duvidas input:checked~h1~div.p {
     max-height: 150px;
+}
+
+@media screen and (max-width: 900px) {
+    .duvidas h1 {
+        font-size: 12px;
+
+    }
+
+    .duvidas h4 {
+        font-size: 20px;
+
+    }
 }
